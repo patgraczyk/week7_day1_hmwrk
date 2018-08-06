@@ -1,4 +1,21 @@
 package Stalls;
 
-public class IceCreamStall {
+import Interfaces.ITicketed;
+import Visitors.Visitor;
+
+public class IceCreamStall extends Stall implements ITicketed {
+
+    public IceCreamStall(String stallName, String stallOwnerName, int parkingSpot, int rating) {
+        super(stallName, stallOwnerName, parkingSpot, rating);
+    }
+
+    @Override
+    public double defaultprice() {
+        return 1.50;
+    }
+
+    @Override
+    public double priceForVisitor(Visitor visitor) {
+        return defaultprice();
+    }
 }

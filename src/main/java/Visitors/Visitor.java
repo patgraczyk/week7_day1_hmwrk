@@ -23,4 +23,12 @@ public class Visitor {
     public int getMoney() {
         return money;
     }
+
+    public boolean canAfford(double price){
+        return (money >= price);
+    }
+
+    public void charge(double price){
+        money -= price;
+    }
 }

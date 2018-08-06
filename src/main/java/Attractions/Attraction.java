@@ -1,14 +1,24 @@
 package Attractions;
 
-public abstract class Attraction {
+import Interfaces.IReviewed;
+import Interfaces.ITicketed;
+import Visitors.Visitor;
 
-    private String attractionName;
+public abstract class Attraction implements ITicketed, IReviewed {
 
-    public Attraction(String attractionName) {
+    protected String attractionName;
+    protected int rating;
+
+    public Attraction(String attractionName, int rating) {
         this.attractionName = attractionName;
+        this.rating = rating;
     }
 
     public String getAttractionName() {
         return attractionName;
+    }
+
+    public boolean visit(Visitor visitor) {
+        return true;
     }
 }
