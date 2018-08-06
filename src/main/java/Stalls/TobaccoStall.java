@@ -20,7 +20,7 @@ public class TobaccoStall extends Stall implements ISecurity {
 
     @Override
     public double defaultprice() {
-        return 2.00;
+        return 6.20;
     }
 
     @Override

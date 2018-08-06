@@ -11,7 +11,7 @@ public class CandyFlossStall extends Stall implements ITicketed {
 
     @Override
     public double defaultprice() {
-        return 2.00;
+        return 4.20;
     }
 
     @Override

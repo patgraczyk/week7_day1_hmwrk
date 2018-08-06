@@ -11,7 +11,7 @@ public class IceCreamStall extends Stall implements ITicketed {
 
     @Override
     public double defaultprice() {
-        return 1.50;
+        return 2.80;
     }
 
     @Override

@@ -55,7 +55,7 @@ public class ThemePark {
 //    VIEW ITICKETED ITEMS THAT VISITOR CAN AFFORD :
 //
 // public ArrayList<ITicketed> getAllAlllowed(Visitor visitor){
-// new array (items visitor can afford) -->write function in visitor
+// new array (items visitor can afford) --> write function in visitor
 // for ticketed in ticketeditems
 //        if visitor.afford = true
 //        itemsvisitorcanafford.add(ticketeditem)
