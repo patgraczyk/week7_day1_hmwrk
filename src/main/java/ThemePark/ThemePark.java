@@ -39,7 +39,7 @@ public class ThemePark {
     }
 
     public ArrayList<IReviewed> getAllReviewed(){
-        reviewedItems.addAll((Collection<? extends IReviewed>) stalls);
+//        reviewedItems.addAll((Collection<? extends IReviewed>) stalls);
         reviewedItems.addAll(attractions);
         return reviewedItems;
     }

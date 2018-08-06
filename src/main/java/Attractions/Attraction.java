@@ -18,6 +18,10 @@ public abstract class Attraction implements ITicketed, IReviewed {
         return attractionName;
     }
 
+    public int getAttractionRating(){
+        return rating;
+    }
+
     public boolean visit(Visitor visitor) {
         return true;
     }
