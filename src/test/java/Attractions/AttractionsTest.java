@@ -13,6 +13,7 @@ public class AttractionsTest {
     Playground playground;
     RollerCoaster rollerCoaster;
     Visitor visitor;
+    Visitor visitor2;
 
     @Before
     public void before(){
@@ -20,7 +21,8 @@ public class AttractionsTest {
         park = new Park("Park", 3, 6.20);
         playground = new Playground("Playground", 4, 5.50);
         rollerCoaster = new RollerCoaster("Rollercoaster", 2, 3.50);
-        visitor = new Visitor(16, 189, 25);
+        visitor = new Visitor(12, 189, 25);
+        visitor2 = new Visitor(16, 130, 25);
     }
 
     @Test
@@ -48,8 +50,23 @@ public class AttractionsTest {
     }
 
     @Test
-    public void getPriceFroVisitor(){
+    public void guestAllowedToVisit(){
+        assertEquals(true, playground.isAllowedTo(visitor));
+    }
 
+    @Test
+    public void guestNotAllowed(){
+        assertEquals(false, playground.isAllowedTo(visitor2));
+    }
+
+    @Test
+    public void AllowedToEneterTallEnough(){
+        assertEquals(true, rollerCoaster.isAllowedTo(visitor));
+    }
+
+    @Test
+    public void notAllowedToEnterNotTallEnough(){
+        assertEquals(false, rollerCoaster.isAllowedTo(visitor2));
     }
 
 }

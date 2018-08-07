@@ -11,12 +11,12 @@ public class Park extends Attraction{
 //    read the advanced extensions too late, so had to implement with the price 0
     @Override
     public double defaultprice() {
-        return 0;
+        return attractionPrice;
     }
 
     @Override
     public double priceForVisitor(Visitor visitor) {
-        return 0;
+        return attractionPrice;
     }
 
     @Override
