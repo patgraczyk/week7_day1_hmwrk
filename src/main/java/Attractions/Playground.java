@@ -5,8 +5,8 @@ import Visitors.Visitor;
 
 public class Playground extends Attraction implements ISecurity {
 
-    public Playground(String attractionName, int rating)
-    { super(attractionName, rating);
+    public Playground(String attractionName, int rating, double attractionPrice)
+    { super(attractionName, rating, attractionPrice);
     }
 
     @Override
@@ -20,7 +20,7 @@ public class Playground extends Attraction implements ISecurity {
 
     @Override
     public double defaultprice() {
-        return 0.00;
+        return attractionPrice;
     }
 
     @Override

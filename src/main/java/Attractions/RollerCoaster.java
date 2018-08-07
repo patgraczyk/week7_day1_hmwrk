@@ -7,8 +7,8 @@ import Visitors.Visitor;
 public class RollerCoaster extends Attraction implements ISecurity, ITicketed {
 
 
-    public RollerCoaster(String attractionName, int rating) {
-        super(attractionName, rating);
+    public RollerCoaster(String attractionName, int rating, double attractionPrice) {
+        super(attractionName, rating, attractionPrice);
     }
 
     @Override
@@ -22,7 +22,7 @@ public class RollerCoaster extends Attraction implements ISecurity, ITicketed {
 
     @Override
     public double defaultprice() {
-        return 8.40;
+        return attractionPrice;
     }
 
 

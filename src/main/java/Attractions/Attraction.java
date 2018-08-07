@@ -6,12 +6,14 @@ import Visitors.Visitor;
 
 public abstract class Attraction implements ITicketed, IReviewed {
 
+    protected double attractionPrice;
     protected String attractionName;
     protected int rating;
 
-    public Attraction(String attractionName, int rating) {
+    public Attraction(String attractionName, int rating, double attractionPrice) {
         this.attractionName = attractionName;
         this.rating = rating;
+        this.attractionPrice = attractionPrice;
     }
 
     public String getAttractionName() {
@@ -25,4 +27,7 @@ public abstract class Attraction implements ITicketed, IReviewed {
     public boolean visit(Visitor visitor) {
         return true;
     }
+
+    public double getPrice() {return attractionPrice; }
+
 }

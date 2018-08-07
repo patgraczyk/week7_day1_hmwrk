@@ -5,13 +5,14 @@ import Visitors.Visitor;
 
 public class Dodgem extends Attraction  {
 
-    public Dodgem(String attractionName, int rating) {
-        super(attractionName, rating);
+
+    public Dodgem(String attractionName, int rating, double attractionPrice) {
+        super(attractionName, rating, attractionPrice);
     }
 
     @Override
     public double defaultprice() {
-        return 4.50;
+        return attractionPrice;
     }
 
     @Override

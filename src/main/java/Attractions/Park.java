@@ -4,8 +4,8 @@ import Visitors.Visitor;
 
 public class Park extends Attraction{
 
-    public Park(String attractionName, int rating) {
-        super(attractionName, rating);
+    public Park(String attractionName, int rating, double attractionPrice) {
+        super(attractionName, rating, attractionPrice );
     }
 
 //    read the advanced extensions too late, so had to implement with the price 0
