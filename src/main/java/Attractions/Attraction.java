@@ -25,8 +25,11 @@ public abstract class Attraction implements ITicketed, IReviewed {
     }
 
     public boolean visit(Visitor visitor) {
-        return true;
+        if(visitor.canAfford(priceFor(visitor))return true;
     }
+
+
+
 
     public double getPrice() {return attractionPrice; }
 

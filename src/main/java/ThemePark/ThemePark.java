@@ -38,8 +38,10 @@ public class ThemePark {
         stalls.add(stall);
     }
 
+
+//    NOT SURE WHY THIS IS BREAKING
     public ArrayList<IReviewed> getAllReviewed(){
-//        reviewedItems.addAll((Collection<? extends IReviewed>) stalls);
+//        reviewedItems.addAll(stalls);
         reviewedItems.addAll(attractions);
         return reviewedItems;
     }

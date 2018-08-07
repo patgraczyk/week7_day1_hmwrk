@@ -60,5 +60,12 @@ public class StallsTest {
         assertEquals(false, tobaccoStall.isAllowedTo(visitor1));
     }
 
+    @Test
+    public void getStallRating(){
+        assertEquals(7,candyFlossStall.getRating());
+        assertEquals(3, iceCreamStall.getRating());
+        assertEquals(5, tobaccoStall.getRating());
+    }
+
 
 }

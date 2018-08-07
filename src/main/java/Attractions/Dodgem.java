@@ -33,4 +33,11 @@ public class Dodgem extends Attraction  {
     public String getName(String name) {
         return "Dodgem";
     }
+
+
+    public boolean visit(Visitor visitor) {
+            return true;
+        }
+
+//        this should have an if statement to test if vis. can afford!
 }

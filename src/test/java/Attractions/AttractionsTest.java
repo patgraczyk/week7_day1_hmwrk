@@ -69,4 +69,12 @@ public class AttractionsTest {
         assertEquals(false, rollerCoaster.isAllowedTo(visitor2));
     }
 
+    @Test
+    public void getRatingOfAttraction(){
+        assertEquals(2, rollerCoaster.getAttractionRating());
+        assertEquals(2, dodgem.getAttractionRating());
+        assertEquals(4, playground.getAttractionRating());
+        assertEquals(3, park.getAttractionRating());
+    }
+
 }
